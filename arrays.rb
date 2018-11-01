@@ -28,19 +28,19 @@ b.unshift(33)
 b.pop
 
 # Remove duplicates
-b.uniq
-puts b
+puts b.uniq
 
+b.each { |i| puts i + 10 }
 
-b.each { |i| puts i + 10}
-
-for number in b
-    puts "number"
+b.each do |_number|
+  puts 'number'
 end
 
-
-names = ["John", "Jane", "Jeff"]
+names = %w[John Jane Jeff]
 
 names.each do |data|
-    puts "Hello #{data}"
+  puts "Hello #{data}"
 end
+
+intro = %w[My name is]
+intro.join(' ')
