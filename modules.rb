@@ -20,7 +20,7 @@ class User
   def self.identify_yourself
     puts 'Hey I am a class method'
   end
-  end
+end
 
 user = User.new('Luke', 'email@example.com')
 user.destroy('myname')
